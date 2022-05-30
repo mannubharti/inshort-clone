@@ -5,28 +5,11 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
-//import ListItemButton from '@mui/material/ListItemButton';
-//import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-//import InboxIcon from '@mui/icons-material/MoveToInbox';
-//import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
-//import { makeStyles } from '@mui/material';
 import categories from '../data/category';
- import { createTheme, useMediaQuery } from '@mui/material';
+ import { createTheme } from '@mui/material';
  import { ThemeProvider } from '@emotion/react';
-
-/*const usestyles = makeStyles({
-  list:{
-    width:200,
-    paddingLeft:10,
-    paddingRight:5,
-
-  },
-  fullList: {
-    width: "auto",
-  } 
-});*/
 
 export default function SwipeableTemporaryDrawer({ setCategory }) {
   const [state, setState] = React.useState({

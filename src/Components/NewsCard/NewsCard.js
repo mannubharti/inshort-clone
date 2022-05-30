@@ -21,7 +21,7 @@ const NewsCard = ( { newsItem } ) => {
                 <span className='title'>{newsItem.title} </span>
                 <br/>{" "}
                  <span className='auther'>
-                    <a href={newsItem.url} target='_blank'><b>short</b></a>{" "}
+                    <a href={newsItem.url} target='_blank' rel="noreferrer"><b>short</b></a>{" "}
                     <span className="muted">
                     by {newsItem.auther ? newsItem.auther :"unknown"} /{"   "}
                     {
@@ -39,7 +39,7 @@ const NewsCard = ( { newsItem } ) => {
                         <br/>{" "}
                         <span className='readmore'>
                             read more at{" "}
-                            <a href={newsItem.url} target='_blank'><b>{newsItem.source.name}</b></a>
+                            <a href={newsItem.url} target='_blank' rel="noreferrer"><b>{newsItem.source.name}</b></a>
                         </span>
                     </div>
                 </div> 
